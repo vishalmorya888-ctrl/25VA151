@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selectors</title>
+        <style>
+            h2{
+                color :rgb(84, 95, 0);
+                font-family: "georgia";
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .txt_clr{
+                color :rgb(77, 255, 71)
+            }
+
+            .txt{
+                color :rgb(255, 0, 0);
+                font-family: "verdana";
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .para{
+                color :rgb(27, 214, 155);
+                font-family: "tahoma";
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1 style="color: rgb(31, 161, 226); font-family:'Arial'; font-size: 48px; font-weight: 800;">
+            HTML UNIT 03
+        </h1>
+        <h1 style="color: rgb(255, 165, 0); font-family:'Courier New'; font-size: 36px; font-weight: 700;">
+            CSS Selectors
+        </h1>
+        <h2>
+            CSS selectors are used to "find" (or select) the HTML elements you want to style.
+        </h2>
+        <p class="para">
+            CSS class selectors are used to specify a style for a group of elements.
+            To create a class selector, you write a period (.) character, followed by the class name.
+            You then add the style properties you want to apply to that class inside curly braces.
+            For example, in the CSS code above, we created a class selector called "txt" that sets the 
+            text color to red, the font family to Verdana, the font size to 18 pixels, and the font weight to 600.
+            We then applied this class to a paragraph element using the class attribute in the HTML code. As a result, 
+            the paragraph with the class "txt" is styled according to the properties defined in the CSS class selector.
+        </p>
+        <p class="txt_clr">
+            In this example we use a class selector to style a paragraph.
+        </p>
+        <p>
+            This is a normal paragraph.
+        </p>
+        <p class="txt">
+            This is a styled paragraph.
+        </p>
+    </body>
+</html>
