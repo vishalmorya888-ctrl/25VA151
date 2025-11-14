@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(232, 213, 184);
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    
+}
+
+html,*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family:'bradley hand', cursive;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    /* font-dispalay: block; */
+    color: rgb(253, 255, 118);
+    text-align: right;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px rgb(255, 0, 0);
+    /*text-wrap: nowrap;*/
+    /*text-overflow: 5px; */
+}
+
+span{
+    color:aliceblue;
+}
+
+#para {
+    color:brown;
+    display: inline block;
+}
+
+ul{
+    list-style-type: square;
+    clear : none;
+}
+
+li{
+    font-size: 18px;
+    font-weight: 600;
+    color: darkblue;
+}
