@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout 1</title>
+        <style>
+            #hdr_top {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 2;
+                border: 2px solid black;
+                padding: 5px;
+            }
+            #hdr_bar {
+                display: flex;
+            }
+            #container {
+                display: flex;
+                flex-direction: row;
+                border: 2px solid black;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            #center {
+                flex-grow: 2;
+            }
+            #center_mid {
+                display: flex;
+            
+            }
+            div[id]:not(#hdr):not(#hdr_top) {
+                border: 2px solid black;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="hdr_top">
+                <div id="">Header Logo</div>
+                <div id="">Header Banner</div>
+            </div>
+            <div id="hdr_bar">
+                <div id="">Header Bar</div>
+            </div>
+            <div id="container">
+                <div id="left">Left Block</div>
+                <div id="center">
+                    <div id="">Centre-Center Block</div>
+                    <div id="center_mid">
+                        <div  id="">Centre-Left Block</div>
+                        <div id="">Centre-Right Block</div>
+                    </div>
+                    <div id="">Module Contents</div> 
+                </div>
+                <div id="right">Right Block</div>
+            </div>
+            
+            <div class="" id="">Footer Bar</div>
+        </main>
+    </body>
+</html>
