@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            background-color: rgb(36, 36, 36);
+        }
+        header{
+        }
+       main{
+        background-color: white;
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:500px;
+        height:auto;
+        border:1px solid black;
+        border-radius: 3px;
+        justify-content: space-between;
+       }
+       .h1{
+        flex-basis:20px;
+        width:500px;
+        height:auto;
+        display:flex;
+        flex-direction: row;
+        background-color: brown;
+        margin-left: 462px;
+       }
+       .h2{
+        flex-basis:320px;
+        display:flex;
+        flex-direction: column;
+        border:2px solid black;
+       }
+       .r1{
+        flex-basis:100px;
+       }
+       .r2{
+        flex-basis:300px;
+        margin-left:50px;
+        font-size:25px;
+        color:white;
+       }
+       .r3{
+        width:60px;
+        height:80px;
+        margin-left:40px ;
+        margin-top:10px;
+       }
+       .r4{
+        flex-basis:50px;
+        color:white;
+        margin-left:10px;
+        font-size:15px;
+       }
+       .b1{
+            flex-basis:50px;
+            text-align: center;
+            font-size: 10px;
+       }
+       .b2{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 260px;
+        padding:5px;
+       }
+       .p1{
+        flex-basis:600px; 
+        display:flex;
+        flex-direction: column;
+       }
+       .p2{
+        flex-basis:200px;
+        padding:10px;
+       }
+       .self{
+         flex-basis: 40px;
+         display:flex;
+         flex-direction: row;
+       }
+       .pac1{
+        flex-basis:200px;
+        padding-top:20px;
+        padding-left:40px;
+       }
+       .pac2{
+        flex-basis:400px;
+       }
+       #pos{
+        position: relative;
+        bottom:0px;
+        left:0px;
+        border-bottom: 2px dotted black;
+       }
+       #image{
+        margin-left:170px;
+        width:150px;
+        height:180px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="h1">
+            <div class="r1"><img src="https://college4u.in/wp-content/uploads/2018/03/abes.png" class = "r3"></div>
+            <div class="r2"><p><strong>ABES Engineering College</strong><div style="color:aliceblue; font-size: 10px; margin-left:100px;">(College Code - 032)</div></p></div>
+        </div>
+    </header>
+    <main>
+        <div class="h2">
+            <div class="b1"><p>19th KM Stone, NH-09, Ghaziabad-201009 , UP , India<br>ph - 0120-7135112 , 9999889341 , Fax;0120-7135115 , Email:info@abes.ac.in , website:www.abes.ac.in</p></div>
+            <div class="p2">
+                 <img src="photo.jpg" id="image" border="1" >
+              </div>
+            <div class="b2">
+              <div class="p1">
+                <div class="self">
+                 <div class="pac1"><strong>Admission No. :</strong></div>
+                 <div class="pac2"><p id="pos">2025B15310172</p></div>
+                </div>
+                <div class="self">
+                    <div class="pac1"><strong>Name :</strong></div>
+                    <div class="pac2"><p id="pos">Vishal Morya</p></div>
+                </div>
+                <div class="self">
+                    <div class="pac1"><strong>Father's Name :</strong></div>
+                    <div class="pac2"><p id="pos">Shiv Dayal</p></div>
+                </div>
+                <div class="self">
+                    <div class="pac1"><strong>Course :</strong></div>
+                    <div class="pac2"><p id="pos">B-Tech</p></div>
+                </div>
+                <div class="self">
+                    <div class="pac1"><strong>Branch :</strong></div>
+                    <div class="pac2"><p id="pos">CSE(AI&ML)</p></div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
