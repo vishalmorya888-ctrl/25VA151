@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive navigation bar</title>
-    <style>
-        main {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-between;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive E-commerce Navbar</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #222;
+        padding: 15px 20px;
+        color: white;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 8px 12px;
+        transition: 0.3s;
+    }
+    .nav-links a:hover {
+        background: #444;
+        border-radius: 5px;
+    }
+    .search-box input {
+        padding: 7px 10px;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+    }
+    .cart {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .hamburger {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .content {
+        padding: 10px;
+        font-size: 14px;
+        color: rgb(222, 99, 99);
+    }
+    @media (max-width: 768px) {
+        .nav-links, .search-box, .cart {
+            display: none;
         }
-
-        #nav {
-            background-color: black;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            flex-basis: 10px;
-            justify-content: space-between;
-            color: white;
+        .hamburger {
+            display: block;
         }
-
-        .box {
-            flex-basis: 12.5%;
-            text-align: center;
-            margin: auto;
-            font-size: 25px;
-        }
-
-        .box1 {
-            flex-basis: 12.5%;
-            text-align: center;
-            margin: auto;
-            font-size: 25px;
-        }
-
-        .content {
-            padding: 10px;
-        }
-
-        @media only screen and (max-width: 850px) {
-            div.box {
-                flex-direction: column;
-                flex-basis: 100%;
-                border-bottom: 1px solid white;
-            }
-
-            div.box1 {
-                flex-basis: 100%;
-                background-image: url(/images/hamburger_icon.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                border-bottom: 1px solid white;
-                text-align: left;
-            }
-
-        }
-    </style>
+    }
+</style>
 </head>
-
 <body>
-    <main>
-        <div id="nav">
-            <div class="box1">Shopping Web</div>
-            <div class="box">Home</div>
-            <div class="box">Product</div>
-            <div class="box">Category</div>
-            <div class="box"> Deal</div>
-            <div class="box">Contact</div>
-            <div class="box">Cart</div>
-            <div class="box">Login</div>
-        </div>
-        <div class="content">
-            <h1>Welcome to Shopping app</h1>
-        </div>
-    </main>
+<div class="navbar">
+    <div class="logo">FlipZone</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+    </div>
+    <div class="cart">🛒</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+<div class="content">
+    <h2>Welcome to FlipZone, your one-stop shop for all things shopping! Explore our wide range of products, unbeatable deals, and seamless shopping experience. Happy shopping!</h2>
+</div>
 </body>
-
 </html>
